@@ -1,1 +1,15 @@
-https://help.sonatype.com/en/download.html
+https://help.sonatype.com/en/download.html --> Link to get nexus download, Always use link to download
+
+Steps to lauch Nexus:
+1.Launch a Server and open in command prompot
+2.go to root user
+3.go to otp directory --> cd /opt/
+4.Install latest version of Java --> yum install java-21-amazon-corretto -y
+5.Download nexus, Navigate to link and copy link address and download --> wget <Link address>
+6.unzip the downloaded file --> tar -zxvf filename.zip
+7.check the files what are downloaded --> ll
+8.then create user --> useradd ravi
+8.Change the owner for downloaded files --> chown -R ravi:ravi filename filename (we need to change owners for both nexus and sonatype)
+9.Go to nexus file --> cd nexusfilename/
+10.Go to Bin directory --> cd bin/
+11.start the nexus --> ./nexus start
