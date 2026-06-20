@@ -1,0 +1,8 @@
+Install Kubens 
+
+curl -sS https://webi.sh/kubens | sh; \
+source ~/.config/envman/PATH.env
+//This is used to know the NS where we are and also we can switch to another NS easily.
+
+kubens 
+//used to switch to NS
